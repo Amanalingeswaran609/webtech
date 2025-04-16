@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gourmet Bistro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 20px;
+    }
+    .navbar {
+      background-color: #343a40;
+      color: white;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    .navbar a:hover {
+      background-color: #495057;
+    }
+    .navbar .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    .home-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      max-height: 500px;
+      margin-bottom: 40px;
+    }
+
+    .carousel img {
+      width: 100%;
+      object-fit: cover;
+      transition: transform 1s ease;
+    }
+
+    .carousel-control {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      color: white;
+      font-size: 2rem;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+
+    .carousel-control-prev {
+      left: 10px;
+    }
+
+    .carousel-control-next {
+      right: 10px;
+    }
+
+    .menu-table {
+      width: 100%;
+      margin-top: 40px;
+      border-collapse: collapse;
+    }
+
+    .menu-table th, .menu-table td {
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .special-dish {
+      font-weight: bold;
+      color: #e60000;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 32%;
+      border-radius: 8px;
+      object-fit: cover;
+      height: 300px;
+    }
+
+    .contact-form {
+      margin-top: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #b50000;
+    }
+
+    .btn-reserve {
+      background-color: #28a745;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn-reserve:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <div class="container">
+    <a href="#" class="navbar-brand">The Gourmet Bistro</a>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</div>
+
+<!-- Home Section -->
+<section id="home" class="home-section">
+  <h1>Welcome to The Gourmet Bistro</h1>
+  <p>Your destination for fine dining and exceptional flavors.</p>
+  
+  <!-- Image Carousel -->
+  <div class="carousel">
+    <img src="https://via.placeholder.com/1000x500?text=Restaurant+Ambience" alt="Restaurant Ambience">
+    <img src="https://via.placeholder.com/1000x500?text=Dish+1" alt="Dish 1">
+    <img src="https://via.placeholder.com/1000x500?text=Dish+2" alt="Dish 2">
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="container">
+  <h2 class="text-center">Our Menu</h2>
+  <table class="menu-table">
+    <thead>
+      <tr>
+        <th>Dish Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Spaghetti Carbonara <span class="badge bg-success">New</span></td>
+        <td>Classic Italian pasta with eggs, cheese, pancetta, and pepper.</td>
+        <td>$12.99</td>
+      </tr>
+      <tr>
+        <td>Grilled Salmon</td>
+        <td>Fresh salmon grilled to perfection with lemon butter sauce.</td>
+        <td>$19.99</td>
+      </tr>
+      <tr>
+        <td>Vegan Buddha Bowl <span class="badge bg-warning">Special</span></td>
+        <td>A wholesome bowl of quinoa, chickpeas, veggies, and tahini sauce.</td>
+        <td>$14.99</td>
+      </tr>
+      <tr>
+        <td>Cheeseburger</td>
+        <td>Juicy beef patty with melted cheese, lettuce, and tomato.</td>
+        <td>$9.99</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Chef's Recommendations</h4>
+  <ul>
+    <li><strong>Spaghetti Carbonara</strong> - A new dish, a must-try!</li>
+    <li><strong>Grilled Salmon</strong> - Fresh, healthy, and flavorful!</li>
+  </ul>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="container">
+  <h2 class="text-center">Gallery</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/500x300?text=Dish+1" alt="Dish Image">
+    <img src="https://via.placeholder.com/500x300?text=Dish+2" alt="Dish Image">
+    <img src="https://via.placeholder.com/500x300?text=Dish+3" alt="Dish Image">
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="container">
+  <h2 class="text-center">Contact Us</h2>
+  <form class="contact-form">
+    <div>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+    </div>
+    <div>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required>
+    </div>
+    <div>
+      <label for="reservation">Reservation Date</label>
+      <input type="date" id="reservation" required>
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn-reserve">Reserve Table</button>
+  </form>
+</section>
+
+</body>
+</html>
